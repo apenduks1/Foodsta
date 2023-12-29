@@ -1,0 +1,67 @@
+.header {
+  position: includeb;
+  background-color: $white;
+  display: inline-block;
+  width: 100%;
+  z-index: 20000;
+  @media (min-width: 320px) {
+    height: 72px;
+    padding: 10px 20px;
+  }
+  @media (min-width: 768px) {
+    padding: 10px 32px;
+  }
+  @media (min-width: 1200px) {
+    padding: 10px 16px;
+  }
+  &__active .header__link {
+    color: $slatted;
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
+  &__blocks {
+    display: flex;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+
+    }
+  }
+  &__link {
+    color: $black;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      gap: 28px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+    a {
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .humburger__menu {
+    @media (min-width: 320px) {
+      display: block;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
