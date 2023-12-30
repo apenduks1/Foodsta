@@ -1,11 +1,37 @@
 .say {
+  background-repeat: no-repeat;
+  @media (min-width: 320px) {
+    background-image: url(../images/say/bg_mobile.png);
+    height: 769px;
+    background-size: 100% 769px;
+  }
+  @media (min-width: 480px) {
+    background-image: url(../images/say/bg_480.png);
+  }
+  @media (min-width: 768px) {
+    background-image: url(../images/say/bg_tablet.png);
+    height: 544px;
+    background-size: 100% 554px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(../images/say/bg.png);
+    height: 647px;
+    background-size: 100% 647px;
+  }
   &__title {
     color: $black;
     font-family: Roboto;
-    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 100px 0 20px 16px;
+    margin: 0;
+    @media (min-width: 320px) {
+      font-size: 28px;
+    }
+    @media (min-width: 768px) {
+      font-size: 42px;
+    }
   }
   &__descr {
     color: $black;
@@ -14,16 +40,50 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0 0 32px 16px;
+    margin: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
+
 .coment {
+  background-image: url(../images/say/coment_bg.png);
+  background-repeat: no-repeat;
+  background-size: 501px 227px;
+  @media (min-width: 320px) {
+    width: 280px;
+    height: 247px;
+  }
+  @media (min-width: 768px) {
+    width: 336px;
+    height: 244px;
+  }
+  @media (min-width: 1200px) {
+    width: 501px;
+    height: 227px;
+  }
   &__descr {
     color: $black;
     font-family: Roboto;
-    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-left: 14px;
+    @media (min-width: 320px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &__acount {
+    display: flex;
+    padding-left: 14px;
+    gap: 16px;
   }
   &__name {
     color: $black;
@@ -32,6 +92,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 21px */
+    margin: 0;
   }
   &__position {
     color: $black;
@@ -40,10 +101,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 21px */
+    margin: 0;
   }
   &__line {
     width: 1px;
     height: 52px;
     background-color: $coment_grean;
+    margin: 0;
+  }
+  &__photo > img {
+    width: 48px;
+    height: 48px;
   }
 }
