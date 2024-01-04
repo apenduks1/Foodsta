@@ -21,7 +21,7 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) { 
     background-image: url(../images/say/bg_4802x.png); 
-    background-size: cover;
+    background-size: 100% 769px;
   }
   }
   @media (min-width: 768px) {
@@ -32,14 +32,13 @@
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) { 
     background-image: url(../images/say/bg_tablet2x.png); 
-    background-size: cover;
+    background-size: 100% 544px;
   }
   }
   @media (min-width: 1200px) {
     background-image: url(../images/say/bg.png);
     padding: 100px 0 200px;
-    width: 100%;
-
+    background-size: 100% 647px;
   }
   &__title {
     color: $black;
