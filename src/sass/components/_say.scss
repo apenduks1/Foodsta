@@ -1,27 +1,45 @@
 .say {
   background-repeat: no-repeat;
   padding: 60px 0;
-
+ 
   // провести ретинізацію зображень згідно прикладу що скинула тобі в пп (коли будеш качати зображення в папці images створи папку say і туди скачуєш зображення що належать до твоєї секції)
   @media (min-width: 320px) {
+    
     background-image: url(../images/say/bg_mobile.png);
-    // height: 769px;  //не потрбіно
+    @media (min-device-pixel-ratio: 2), 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) { 
+    background-image: url(../images/say/bg_mobile2x.png); 
     background-size: cover;
+  }
   }
   @media (min-width: 480px) {
     background-image: url(../images/say/bg_480.png);
+    @media (min-device-pixel-ratio: 2), 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) { 
+    background-image: url(../images/say/bg_4802x.png); 
+    background-size: cover;
+  }
   }
   @media (min-width: 768px) {
     background-image: url(../images/say/bg_tablet.png);
-    // height: 544px;  //не потрбіно
-    // background-size: 100% 554px; //не потрбіно
     padding: 60px 0 120px;
+    @media (min-device-pixel-ratio: 2), 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) { 
+    background-image: url(../images/say/bg_tablet2x.png); 
+    background-size: cover;
+  }
   }
   @media (min-width: 1200px) {
     background-image: url(../images/say/bg.png);
-    // height: 647px;  //не потрбіно
-    // background-size: 100% 647px; //не потрбіно
     padding: 100px 0 200px;
+    width: 100%;
+
   }
   &__title {
     color: $black;
@@ -128,3 +146,4 @@
     height: 48px;
   }
 }
+
