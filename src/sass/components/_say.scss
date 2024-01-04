@@ -15,37 +15,43 @@
   }
   }
   @media (min-width: 480px) {
+    background-size: 100% 769px;
+
     background-image: url(../images/say/bg_480.png);
     @media (min-device-pixel-ratio: 2), 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) { 
     background-image: url(../images/say/bg_4802x.png); 
-    background-size: cover;
+   
   }
   }
   @media (min-width: 768px) {
     background-image: url(../images/say/bg_tablet.png);
     padding: 60px 0 120px;
+    background-size: 100% 544px;
     @media (min-device-pixel-ratio: 2), 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) { 
     background-image: url(../images/say/bg_tablet2x.png); 
-    background-size: cover;
+
   }
   }
   @media (min-width: 1200px) {
     background-image: url(../images/say/bg.png);
     padding: 100px 0 200px;
-    width: 100%;
+    background-size: 100% 647px;
     @media (min-device-pixel-ratio: 2), 
     (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) { 
     background-image: url(../images/say/bg2x.png); 
-    background-size: cover;
+   
   }
+   
+
+    //тут також ретинізацію потрібно
   }
   &__title {
     color: $black;
