@@ -1,15 +1,18 @@
-.container {
-  margin: 0 auto;
-  @media (min-width: 320px) {
-    padding: 0 15px;
-  }
-  @media (min-width: 768px) {
-    padding: 0;
-    max-width: 738px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1170px;
-  }
+.container { 
+  width: 100%; 
+  padding: 0 20px; 
+  margin: 0 auto; 
+  @media screen and (min-width: 480px) { 
+    max-width: 480px; 
+  } 
+  @media screen and (min-width: 768px) { 
+    max-width: 768px; 
+    padding: 0 32px; 
+  } 
+  @media screen and (min-width: 1280px) { 
+    max-width: 1280px; 
+    padding: 0 16px; 
+  } 
 }
 * {
   box-sizing: border-box;
@@ -25,9 +28,4 @@ a {
 li {
   list-style-type: none;
 }
-.order__btn {
-  padding: 6px 18px;
-  justify-content: center;
-  align-items: center;
-  background-color: #bbf330;
-}
+
