@@ -1,0 +1,28 @@
+.order-modal {
+  position: fixed;
+  z-index: 100;
+  transition: 0.3s;
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__container {
+    width: 458px;
+    height: 449px;
+    border-radius: 30px;
+    background: $yellow;
+    position: absolute;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.is-hidden-order {
+  opacity: 0;
+  pointer-events: none;
+}
+
