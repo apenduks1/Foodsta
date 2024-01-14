@@ -5,11 +5,32 @@
             <h2>Enjoy Your Favorite Food From Anywhere</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
           <button class='promo__button' data-open-order>Order Now</button>
-        <div class='promo__photo'>
-          <img class='promo__photo-main' src='./images/promo_images/promo_photo.png' alt='main-photo'>
-          <img class='promo__photo-arrow-left' src='./images/promo_images/promo-left-arrow.svg' alt='arrow'>
-          <img class='promo__photo-arrow-right' src='./images/promo_images/promo-right-arrow.svg' alt='arrow'>
-        </div>
     </div>
-  </div>
+      <ul class='promo__photo'>
+        <li class='promo__item'>
+          <picture>
+            <source srcset='./images/promo_images/promo_photo.png 1x, ./images/promo_images/promo-photo-2x-desk.png 2x' media="(min-width:1200px)">
+            <source srcset='./images/promo_images/promo-photo-1x-table.png 1x, ./images/promo_images/promo-photo-2x-table.png 2x'  media="(max-width:767px)">
+            <img src='./images/promo_images/promo_photo.png' alt='photo'>
+          </picture>
+        </li>
+        <li class='promo__item'>
+          <picture>
+            <source srcset='./images/promo_images/promo-image-1x-desk.png 1x, ./images/promo_images/promo-image-2x-desk.png 2x' media="(min-width:1200px)">
+            <source srcset='./images/promo_images/promo1-image-1x-table.png 1x, ./images/promo_images/promo-image-2x-table.png 2x'  media="(max-width:767px)">
+            <img src='./images/promo_images/promo-image-1x-desk.png' alt='photo'>
+          </picture>
+        </li>
+        <li class='promo__item'>
+          <picture>
+            <source srcset='./images/promo_images/promo1-image-1x-desk.png 1x, ./images/promo_images/promo1-image-2x-desk.png 2x' media="(min-width:1200px)">
+            <source srcset='./images/promo_images/promo-image-1x-table.png 1x, ./images/promo_images/promo1-image-2x-table.png 2x'  media="(max-width:767px)">
+            <img src='./imges/promo/promo1-image-1x-desk.png' alt='photo'>
+          </picture>
+        </li>
+<!--        <img class='promo__photo-arrow-left' src='./images/promo_images/promo-left-arrow.svg' alt='arrow'>-->
+<!--        <img class='promo__photo-arrow-right' src='./images/promo_images/promo-right-arrow.svg' alt='arrow'>-->
+      </ul>
+    </div>
+   </div>
 </arcticle>
