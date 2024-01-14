@@ -1,0 +1,16 @@
+.footer {
+  height: 400px;
+  background: var(--White, $light-white);
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+}
+
+.footer-block-one {
+  display: flex;
+  gap: 150px;
+}
+
+
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
