@@ -1,7 +1,8 @@
 .footer {
-  height: 400px;
+  height: 450px;
   background: var(--White, $light-white);
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+  position: relative;
 
   &__wrapper {
     display: flex;
@@ -18,15 +19,59 @@
 
 .footer-block-two {
   padding-top: 100px;
+}
 
-  &__block-two-title {
-    color: var(--Black, $black);
-    font-family: Roboto, sans-serif
-    font-size: 14px;
+.footer__block-two-input {
+  height: 42px;
+  padding: 12px 61.5px 12px 12px;
+  border-radius: 30px;
+  border: 0.854px solid var(--Yellow-main, $yellow);
+  background: var(--White, $light-white);
+  outline: none;
+  margin-top: 12px;
+}
+
+.footer__block-two-button {
+  color: $black;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+
+  padding: 11px 22px;
+  border-radius: 30px;
+  border: 0.854px solid $coment_grean;
+  background: $white;
+}
+
+.footer__block-two-subtitle {
+  color: var(--Black, $black);
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 12px;
+
+  & a {
+    color: var(--Dark-green, $coment_grean);
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
   }
+}
+
+.footer__block-two-title {
+  color: var(--Black, $black);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .footer__nav-list {
@@ -44,3 +89,40 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.footer-block-three {
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block-three-list {
+  display: flex;
+  gap: 20px;
+
+  & a {
+    color: var(--Dark-green, $coment_grean);
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
+
+.footer-bottom-title {
+  color: var(--Black, $black);
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-photo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
