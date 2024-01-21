@@ -81,13 +81,6 @@ a {
   position: relative;
 }
 
-.promo__item img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .promo__photo-main {
   height: 100%;
   width: 100%;
@@ -109,6 +102,33 @@ a {
   cursor: pointer;
 }
 
+.slick-slider {
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .promo__photo {
+    width: 320px;
+    height: 320px;
+    margin-top: 150px;
+  }
+  .promo__photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .promo__main-text {
+    margin-top: 60px;
+  }
+  .promo__main-text h2 {
+    width: 537px;
+  }
+  .promo__main-text p {
+    width: 336px;
+  }
+  .slick-slider {
+    right: 130px;
+  }
+}
 .order-modal {
   position: fixed;
   z-index: 100;
