@@ -1,5 +1,10 @@
+
 @import './utils/color.scss';
 @import './utils/general.scss';
 @import './components/common';
 @import './components/say';
-@import './components/favorits'
+@import './components/favorits';
+
+@import'./favorits.scss';
+@import'./Some-of-Our-Favorites.scss';
+
