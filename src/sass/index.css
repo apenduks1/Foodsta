@@ -170,7 +170,7 @@ a {
 
 .slick-next {
   right: -26px;
-  padding: 9px 0;
+  padding: 9px;
 }
 .slick-next::before {
   content: "";
