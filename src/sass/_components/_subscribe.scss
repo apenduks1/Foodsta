@@ -6,47 +6,121 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    @media (min-width: 768px) {
+      font-size: 42px;
+    }
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
   }
   &__text {
     padding: 20px 0px 24px 0px;
     color: $black_v2;
     font-family: Roboto;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+  &__block {
+    display: flex;
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__banan {
+    display: flex;
+    @media (min-width: 768px) {
+      justify-content: end;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__box {
+    display: flex;
+    @media (min-width: 1200px) {
+      gap: 32px;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 22px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__imput--block {
+    @media (max-width: 767px) {
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__information {
+    @media (min-width: 1200px) {
+      padding-top: 46px;
+    }
+    @media (min-width: 768px) {
+      padding-top: 20px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 17px;
+    }
   }
   &__input {
     outline: none;
-    display: flex;
     height: 42px;
-    padding: 12px 57px 12px 12px;
+    border-color: $yellow;
+    border-style: solid;
+    border-radius: 30px;
+    display: flex;
     align-items: center;
+    flex: 1 0 0;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    border-color: $yellow;
-    border-radius: 30px;
+    @media (min-width: 768px) {
+      padding: 12px 57px 12px 12px;
+    }
+    @media (max-width: 767px) {
+      padding: 12px 0px 12px 12px;
+      justify-content: center;
+    }
   }
   &__btn {
     color: $black_v2;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
     font-family: Roboto;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    outline: none;
-    border: none;
-    padding: 11px 22px;
-    justify-content: center;
-    align-items: center;
     border-radius: 30px;
     background-color: $slatted;
+    padding: 11px 22px;
+  }
+  &__btn--block {
+    display: flex;
+    justify-content: end;
   }
   &__list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
