@@ -1,55 +1,50 @@
 .say {
   background-repeat: no-repeat;
   padding: 60px 0;
- 
+
   // провести ретинізацію зображень згідно прикладу що скинула тобі в пп (коли будеш качати зображення в папці images створи папку say і туди скачуєш зображення що належать до твоєї секції)
   @media (min-width: 320px) {
-    
     background-image: url(../images/say/bg_mobile.png);
-    @media (min-device-pixel-ratio: 2), 
-    (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi), 
-    (min-resolution: 2dppx) { 
-    background-image: url(../images/say/bg_mobile2x.png); 
-    background-size: cover;
-  }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/say/bg_mobile2x.png);
+      background-size: cover;
+    }
   }
   @media (min-width: 480px) {
     background-size: 100% 769px;
 
     background-image: url(../images/say/bg_480.png);
-    @media (min-device-pixel-ratio: 2), 
-    (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi), 
-    (min-resolution: 2dppx) { 
-    background-image: url(../images/say/bg_4802x.png); 
-   
-  }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/say/bg_4802x.png);
+    }
   }
   @media (min-width: 768px) {
     background-image: url(../images/say/bg_tablet.png);
     padding: 60px 0 120px;
     background-size: 100% 544px;
-    @media (min-device-pixel-ratio: 2), 
-    (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi), 
-    (min-resolution: 2dppx) { 
-    background-image: url(../images/say/bg_tablet2x.png); 
-
-  }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/say/bg_tablet2x.png);
+    }
   }
   @media (min-width: 1280px) {
     background-image: url(../images/say/bg.png);
     padding: 100px 0 200px;
     background-size: 100% 647px;
-    @media (min-device-pixel-ratio: 2), 
-    (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi), 
-    (min-resolution: 2dppx) { 
-    background-image: url(../images/say/bg2x.png); 
-   
-  }
-   
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/say/bg2x.png);
+    }
 
     //тут також ретинізацію потрібно
   }
@@ -59,11 +54,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
+    font-size: 28px;
     margin: 0;
-    @media (min-width: 320px) {
-      font-size: 28px;
+    @media (min-width: 480px) {
+      text-align: center;
     }
+
     @media (min-width: 768px) {
       font-size: 42px;
     }
@@ -71,12 +67,18 @@
   &__descr {
     color: $black;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     margin: 28px 0 0 0;
+    @media (min-width: 480px) {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
     &--comment {
       color: $black;
       margin-top: 28px;
@@ -85,9 +87,6 @@
       font-weight: 700;
       line-height: normal;
 
-      @media (min-width: 320px) {
-        font-size: 16px;
-      }
       @media (min-width: 768px) {
         font-size: 18px;
       }
@@ -95,12 +94,13 @@
   }
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 32px;
     gap: 24px;
     @media (min-width: 768px) {
       gap: auto;
+      justify-content: space-between;
     }
   }
 
@@ -158,4 +158,3 @@
     height: 48px;
   }
 }
-
