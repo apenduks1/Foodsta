@@ -1,7 +1,3 @@
-@import './utils/color.scss';
-@import './utils/general.scss';
-
-
-@import './components/common';
-@import './components/say';
-
+@import './base/reset', './utils/colors', './utils/general', './utils/mixin',
+  './utils/placeholder', './utils/variables', './components/header',
+  './components/mobile_menu', './components/subscribe', './components/say';
