@@ -123,16 +123,16 @@
 .footer-photo {
   position: absolute;
   bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px ) {
 
   .footer {
     height: 506px;
-  }
-
-  .footer-photo {
-    left: 0;
   }
 
   .footer__wrapper {
@@ -165,14 +165,15 @@
 
   .footer-block-one {
     gap: 80px;
+
+    & img {
+      position: relative;
+      bottom: 66px;
+    }
   }
 
   .footer__nav-list {
     flex-direction: column;
-  }
-
-  .footer-photo {
-    width: 100%;
   }
 
   .footer__block-two-button {
