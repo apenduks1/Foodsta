@@ -1,17 +1,57 @@
 <section class="subscribe">
   <div class="container">
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <div class="subscribe__form">
-      <form class="subscribe__list">
-        <div class="subscribe__box">
-            <input class="subscribe__input" type="email" name="email" placeholder="Enter your email" />
-          <button class="subscribe__btn">Subscribe</button>
+    <div class="subscribe__block">
+      <div class="subscribe__banan">
+        <picture>
+          <source
+            srcset="
+              ./images/banan_desk.1x.png 1x,
+              ./images/banan_desk.2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/banan_tablet.1x.png 1x,
+              ./images/banan_tablet.2x.png 2x
+            "
+            media="(min-width:767px)"
+          />
+          <source
+            srcset="
+              ./images/banan_mobile.1x.png 1x,
+              ./images/banan_mobile.2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/banan_desk.1x.png" alt="banan" />
+        </picture>
+      </div>
+      <div class="subscribe__information">
+        <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <div class="subscribe__form">
+          <form class="subscribe__list">
+            <div class="subscribe__box">
+              <div class="subscribe__imput--block">
+                <input
+                  stule=""
+                  class="subscribe__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="subscribe__btn--block">
+                <button class="subscribe__btn">Subscribe</button>
+              </div>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </section>

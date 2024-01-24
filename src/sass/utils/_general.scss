@@ -30,3 +30,13 @@ li {
   list-style-type: none;
 }
 
+.stars__star {
+  width: 17px;
+  height: 16px;
+}
+.stars__list {
+  display: flex;
+  padding: 0;
+  gap: 4px;
+  margin: 0;
+}
