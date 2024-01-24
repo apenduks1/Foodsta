@@ -111,3 +111,18 @@
   border: 2px solid var(--Dark-green, $green);
   background: var(--Button-green, $light-green);
 }
+
+.order-modal__container {
+  @media screen and (max-width: 320px) {
+    width: 97%;
+  }
+}
+
+.order-modal__input {
+  & input {
+    @media screen and (max-width: 320px) {
+      width: 280px;
+      height: 48px;
+    }
+  }
+}
