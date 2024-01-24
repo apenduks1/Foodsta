@@ -1,7 +1,2 @@
-@import "utils/general";
-@import "utils/colors";
-@import "utils/placeholder";
-
-
-@import '../sass/components/promo';
-@import "components/promo-modal";
+@import './base/reset', './utils/colors', './utils/general', './utils/mixin',
+  './utils/placeholder', './utils/variables', './components/header', "./components/mobile_menu", './components/promo', './components/promo-modal', "./components/subscribe", './components/common', './components/say';
