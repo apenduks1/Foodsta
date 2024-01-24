@@ -1,0 +1,2 @@
+!function(){var e,t,o,r;e=document.querySelector(".mobile__menu"),t=document.querySelector(".humburger__menu"),o=document.querySelector(".menu__close"),r=function(){var o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-hidden"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)},t.addEventListener("click",r),o.addEventListener("click",r)}();
+//# sourceMappingURL=index.06a5f56c.js.map

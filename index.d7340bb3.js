@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".mobile__menu"),t=document.querySelector(".humburger__menu"),o=document.querySelector(".menu__close"),c=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-hidden");bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",c),o.addEventListener("click",c)})();
+//# sourceMappingURL=index.d7340bb3.js.map
