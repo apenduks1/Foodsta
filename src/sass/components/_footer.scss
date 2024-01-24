@@ -129,10 +129,10 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px ) {
+@media screen and (max-width: 768px ) {
 
   .footer {
-    height: 506px;
+    height: 370px;
   }
 
   .footer__wrapper {
@@ -153,7 +153,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .footer {
     height: 610px;
   }
