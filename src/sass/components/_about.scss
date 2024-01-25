@@ -43,6 +43,7 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/about/bg_desctop2x.png);
       display: flex;
+      justify-content: center;
     }
   }
   &__title {
@@ -85,11 +86,14 @@
       display: none;
     }
   }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
   &__photo--main {
     @media (min-width: 320px) {
       width: 201.6px;
       height: 255.549px;
-
       display: flex;
       justify-content: center;
       margin: 0 auto;
@@ -104,7 +108,8 @@
     @media (min-width: 1200px) {
       width: 550px;
       height: 604px;
-      margin-top: 117px;
+      
+      
     }
   }
   &__photos:nth-child(1) {
@@ -129,7 +134,9 @@
   }
   &__info {
     @media (min-width:1200px) {
-    margin-left: 400px;
+    margin-left: 580px;
+    position: absolute;
+    bottom: 20%;
     }
   }
   &__btn {
@@ -166,7 +173,7 @@
     gap: 11;
   }
   @media (min-width:1200px) {
-    gap: 67px;
+    gap: 68px;
   }
   &__title {
     color: var(--Black, #2c2c2c);
