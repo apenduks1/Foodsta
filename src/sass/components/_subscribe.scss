@@ -1,4 +1,15 @@
 .subscribe {
+  position: relative;
+  top: -50px;
+    
+  @media (min-width:768px) {
+
+    top: -80px;
+  }
+  @media (min-width: 1200px) {
+
+    top: -80px;
+  }
   &__title {
     color: $black_v2;
     font-family: Roboto;
@@ -30,13 +41,21 @@
     }
   }
   &__block {
+<<<<<<< HEAD:src/sass/_components/_subscribe.scss
     @media (min-width: 1200px) {
     display: flex;
       flex-wrap: nowrap;
       flex-direction: row-reverse;
+=======
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      justify-content: end;
+>>>>>>> 3d094a7f4f056a3edaedfe04ab5b43adb71ba2b5:src/sass/components/_subscribe.scss
     }
-    @media (max-width: 1199px) {
-      flex-wrap: wrap;
+    @media (min-width: 1199px) {
+      justify-content: start;
     }
   }
   &__banan {
