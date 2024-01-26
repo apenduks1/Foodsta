@@ -1,9 +1,23 @@
 <section class="about">
   <div class="about__cotainer container">
     <div class="about__photos">
-      <img class="about__photo--main" src="./images/about/main_apple.png" alt="apple">
-      <img class="about__photo" src="./images/about/apple_blur50.png" alt="apple">
-      <img class="about__photo" src="./images/about/apple_blur25.png" alt="apple">
+
+    <picture class="about__photo--main"> 
+      <source srcset='./images/about/main_apple.png 1x, ./images/about/main_apple2x.png 2x' media="(min-width:1200px)"> 
+      <source srcset='./images/about/main_apple_tablet.png 1x, ./images/about/main_apple_tablet_2x.png 2x'  media="(min-width:767px)"> 
+
+      <source srcset='./images/about/main_apple_mobile.png 1x, ./images/about/main_apple_mobile_2x.png 2x'  media="(max-width:767px)"> 
+      <img src='./images/about/main_apple.png' alt='photo'> 
+    </picture> 
+    <picture class="about__photo--blur"> 
+      <source srcset='./images/about/apple_blur50.png 1x, ./images/about/apple_blur50_2x.png 2x'  media="(min-width:767px)"> 
+      <img src='./images/about/apple_blur50.png' alt='photo'> 
+    </picture> 
+    <picture class="about__photo--blur"> 
+      <source srcset='./images/about/apple_blur50.png 1x, ./images/about/apple_blur50_2x.png 2x'  media="(min-width:767px)"> 
+      <img src='./images/about/apple_blur25.png' alt='photo'> 
+    </picture>
+ 
     </div>
    <div class="about__info">
     <h2 class="about__title">What’s Special About Our Offerings</h2>
