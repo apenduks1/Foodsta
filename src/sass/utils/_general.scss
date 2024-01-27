@@ -1,25 +1,10 @@
-ul {
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.stars__star {
-  width: 17px;
-  height: 16px;
-}
-.stars__list {
-  display: flex;
-  padding: 0;
-  gap: 4px;
-  margin: 0;
-}
+
 
 .container { 
   width: 100%; 
   padding: 0 20px; 
   margin: 0 auto; 
+  position: relative;
   @media screen and (min-width: 480px) { 
     max-width: 480px; 
   } 
@@ -31,4 +16,40 @@ a {
     max-width: 1280px; 
     padding: 0 16px; 
   } 
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto";
+  background-color: #ffffff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+
+.stars__star {
+  width: 17px;
+  height: 16px;
+}
+.stars__list {
+  display: flex;
+  padding: 0;
+  gap: 4px;
+  margin: 0;
 }
