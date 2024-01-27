@@ -1,5 +1,5 @@
 .promo {
- 
+  background: var(--White, $light-white);
   padding: 60px 0;
   margin-top: 76px;
 
@@ -50,11 +50,11 @@
   }
   &__button {
     border-radius: 30px;
-   /*  background: var($slatted); */
+    background: var(--Button-green, $light-green);
     padding: 6px 18px;
     margin-top: 28px;
 
-   /*  color: var($black); */
+    color: var(--Black, $black);
     text-align: right;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -85,7 +85,7 @@
     margin-top: 150px;
     border-radius: 580px;
     border: 26px solid var(--Yellow-main, $yellow);
-    background: var($white);
+    background: var(--White, $light-white);
     position: relative;
   }
   @media screen and (min-width: 1280px) {
@@ -179,8 +179,8 @@
 
   &:hover {
     &::before {
-      border-left: 2px $slatted solid;
-      border-top: 2px $slatted solid;
+      border-left: 2px $green solid;
+      border-top: 2px $green solid;
     }
   }
 }
@@ -206,8 +206,8 @@
 
   &:hover {
     &::before {
-      border-left: 2px $slatted solid;
-      border-top: 2px $slatted solid;
+      border-left: 2px $green solid;
+      border-top: 2px $green solid;
     }
   }
 }
