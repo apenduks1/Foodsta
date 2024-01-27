@@ -2,7 +2,7 @@
   padding-top:100px ;
   padding-bottom:100px ;
   &__title {
-    color: $black_v2;
+    color: $black;
     font-family: Roboto;
     font-size: 42px;
     font-style: normal;
@@ -11,7 +11,7 @@
   }
   &__text {
     padding: 20px 0px 24px 0px;
-    color: $black_v2;
+    color: $black;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -33,7 +33,7 @@
     border-radius: 30px;
   }
   &__btn {
-    color: $black_v2;
+    color: $black;
     font-family: Roboto;
     font-size: 13px;
     font-style: normal;

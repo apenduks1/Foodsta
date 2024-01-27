@@ -5,7 +5,7 @@
   "homepage": "https://apenduks1.github.io/Foodsta",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Foodstagit/"
+    "build": "parcel build src/*.html --public-url /Foodsta/"
   },
   "repository": {
     "type": "git",
