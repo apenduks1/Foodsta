@@ -1,5 +1,2 @@
-@import './utils/color.scss';
-@import './utils/general.scss';
-@import './components/about';
-@import './components/say';
-
+@import './base/reset', './utils/colors', './utils/general', './utils/mixin',
+  './utils/placeholder', './utils/variables', './components/header', "./components/mobile_menu", './components/promo', './components/_about.scss', './components/promo-modal', "./components/subscribe",  './components/say';
