@@ -75,8 +75,19 @@
   }
 
   & img {
-    position: relative;
-    bottom: 63px;
+    @media screen and (max-width: 320px) {
+        position: relative;
+        bottom: 63px;
+    }
+
+    @media screen and (max-width: 375px) {
+      position: relative;
+      bottom: 63px;
+    }
+    @media screen and (max-width: 475px) {
+      position: relative;
+      bottom: 63px;
+    }
   }
 }
 
