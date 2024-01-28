@@ -1,7 +1,7 @@
 .footer {
   height: 450px;
   background: var(--White, $light-white);
-  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   margin-top: 100px;
 
   @media screen and (min-width: 320px) {
@@ -15,9 +15,9 @@
   @media (min-width: 320px) {
     background-image: url(../images/footer/footer-photo-1x-mobile.png);
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-photo-2x-mobile.png);
       background-size: 100% 619px;
     }
@@ -28,21 +28,21 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-photo-2x-table.png);
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     background-image: url(../images/footer/footer-photo-1x-desk.png);
     padding: 100px 0 200px;
     background-size: contain;
     background-position: bottom;
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-photo-2x-desk.png);
       display: flex;
     }
@@ -57,9 +57,9 @@
       gap: 0;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       flex-direction: row;
-      gap: 300px;
+      justify-content: space-between;
     }
   }
 }
@@ -76,8 +76,8 @@
 
   & img {
     @media screen and (max-width: 320px) {
-        position: relative;
-        bottom: 63px;
+      position: relative;
+      bottom: 63px;
     }
 
     @media screen and (max-width: 375px) {
@@ -189,7 +189,6 @@
   }
 }
 
-
 .footer__nav-item a {
   color: var(--Black, $black);
   font-family: Roboto, sans-serif;
@@ -252,4 +251,3 @@
     padding-top: 0;
   }
 }
-
