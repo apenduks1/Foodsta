@@ -140,6 +140,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 19.5px */
+    &:hover {
+      background-color: $slatted;
+      transition: 0.5s;
+    }
   }
   &__descr {
     color: var(--Black, #000);

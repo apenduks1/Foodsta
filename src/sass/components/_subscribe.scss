@@ -116,7 +116,7 @@
   &__btn {
     color: $black_v2;
     outline: none;
-    border: none;
+    border-color:$slatted ;
     justify-content: center;
     align-items: center;
     font-family: Roboto;
@@ -127,6 +127,11 @@
     border-radius: 30px;
     background-color: $slatted;
     padding: 11px 22px;
+    &:hover {
+      background-color: white;
+      
+      transition: 0.5s;
+    }
   }
   &__btn--block {
     display: flex;

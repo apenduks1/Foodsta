@@ -46,6 +46,11 @@
       border-radius: 30;
       padding: 6px 18px;
       background-color: $slatted;
+      border-color: $slatted;
+    }
+    button:hover {
+      background-color: white;
+      transition: 0.5s;
     }
     @media (max-width: 767px) {
       display: none;

@@ -62,7 +62,12 @@
     font-weight: 500;
     line-height: 150%;
     outline: none;
-    border: none;
+    border-color:$slatted ;
+    &:hover {
+      background-color: $white;
+      transition: 1s;
+      
+    }
   }
   &__wrapper {
     display: flex;
