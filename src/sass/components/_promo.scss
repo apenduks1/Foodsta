@@ -50,10 +50,12 @@
   }
   &__button {
     border-radius: 30px;
-    background: var(--Button-green, $light-green);
+    background: var(--Button-green, $slatted);
     padding: 6px 18px;
     margin-top: 28px;
-
+    display: block;
+    width: 98px;
+    height: 32px;
     color: var(--Black, $black);
     text-align: right;
     font-family: 'Roboto', sans-serif;
@@ -61,8 +63,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    outline: none;
-    border: none;
+ 
+    border-color:$slatted ;
+    &:hover {
+      background-color: $wite;
+      transition: 1s;
+      
+    }
   }
   &__wrapper {
     display: flex;
@@ -76,7 +83,7 @@
 
 .promo__photo {
   // тут приховується слайдер
-  display: none;
+  display: block;
 
   @media screen and (min-width: 768px) {
     display: block;
