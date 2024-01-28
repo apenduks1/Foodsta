@@ -4,6 +4,14 @@
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
   margin-top: 100px;
 
+  @media screen and (min-width: 320px) {
+    height: 619px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 506px;
+  }
+
   @media (min-width: 320px) {
     background-image: url(../images/footer/footer-photo-1x-mobile.png);
     @media (min-device-pixel-ratio: 2),
@@ -11,7 +19,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-photo-2x-mobile.png);
-      background-size: cover;
+      background-size: 100% 619px;
     }
   }
   @media (min-width: 768px) {
@@ -42,7 +50,13 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 300px;
+
+    @media screen and (min-width: 320px) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 }
 
@@ -51,10 +65,23 @@
   gap: 150px;
   align-items: center;
   padding-top: 30px;
+
+  @media screen and (min-width: 320px) {
+    gap: 80px;
+  }
+
+  & img {
+    position: relative;
+    bottom: 63px;
+  }
 }
 
 .footer-block-two {
   padding-top: 100px;
+
+  @media screen and (min-width: 320px) {
+    padding: 40px 0 0 0;
+  }
 }
 
 .footer__block-two-input {
@@ -65,6 +92,11 @@
   background: var(--White, $light-white);
   outline: none;
   margin-top: 12px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
 }
 
 .footer__block-two-button {
@@ -79,6 +111,16 @@
   border-radius: 30px;
   border: 0.854px solid $coment_grean;
   background: $white;
+
+  @media screen and (min-width: 320px) {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
 }
 
 .footer__block-two-subtitle {
@@ -89,6 +131,14 @@
   font-weight: 400;
   line-height: normal;
   padding-top: 12px;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
 
   & a {
     color: var(--Dark-green, $coment_grean);
@@ -114,6 +164,14 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 
@@ -130,11 +188,26 @@
   padding-top: 130px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 100px;
+  }
 }
 
 .footer-block-three-list {
   display: flex;
   gap: 20px;
+
+  @media screen and (min-width: 320px) {
+    gap: 13px;
+    justify-content: center;
+  }
 
   & a {
     color: var(--Dark-green, $coment_grean);
@@ -154,86 +227,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
 
-@media screen and (max-width: 768px ) {
-
-  .footer {
-    height: 506px;
-  }
-
-  .footer__wrapper {
-    flex-wrap: wrap;
-    padding-top: 100px;
-  }
-
-  .footer-block-two {
+  @media screen and (min-width: 320px) {
     padding-top: 40px;
-  }
-
-  .footer-block-three {
-    padding-top: 100px;
-  }
-
-  .footer-block-one {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer {
-    height: 610px;
-  }
-
-  .footer__wrapper {
-    padding-top: 60px;
-    flex-wrap: wrap;
-  }
-
-  .footer-block-one {
-    gap: 80px;
-
-    & img {
-      position: relative;
-      bottom: 66px;
-    }
-  }
-
-  .footer__nav-list {
-    flex-direction: column;
-  }
-
-  .footer__block-two-button {
-    margin-top: 20px;
-  }
-
-  .footer__block-two-title {
-    margin-left: 12px;
-  }
-
-  .footer__block-two-input {
-    display: flex;
-    margin: 12px 0 0 auto;
-  }
-
-  .footer__block-two-subtitle {
-    padding-top: 20px;
-  }
-
-  .footer-block-three {
-    flex-direction: column;
-    width: 107%;
-    padding-top: 50px;
     text-align: center;
-    gap: 40px;
   }
 
-  .footer__block-two-button {
-    display: block;
-    margin-left: auto;
-  }
-
-  .footer__block-two-input {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
   }
 }
+
