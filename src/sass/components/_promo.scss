@@ -63,12 +63,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
- 
+
     border-color:$slatted ;
     &:hover {
       background-color: $wite;
       transition: 1s;
-      
     }
   }
   &__wrapper {
